@@ -1,0 +1,24 @@
+.container{
+    margin: 0 auto 50px auto;
+    width: 90%;
+}
+
+.item_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+.container {
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.product_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

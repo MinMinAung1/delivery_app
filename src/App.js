@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import SplashScreen from "./Pages/SplashScreen";
+import Categories from "./Pages/Categories";
+import Vegetables from "./Pages/Vegetables";
+import CheckoutScrollView from "./Pages/CheckoutScrollView";
+import Payment from "./Pages/Payment";
+import Layout from "./components/ui/Layout";
+import Items from "./Pages/Items";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<SplashScreen />} />
+        <Route path="/items" element={<Items />} />
+        <Route path="/" element={<Payment />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/vegetable" element={<Vegetables />} />
+        <Route path="/checkout" element={<CheckoutScrollView />} />
+        <Route path="/payment" element={<Payment />} />
+      </Routes>
+    </Layout>
   );
 }
 
