@@ -10,7 +10,7 @@ const CategorieList = (props) => {
         <div className={classes.container}>
           <div className={classes.navbar}>
             <span className={classes.arrow}>←</span>
-            <h2>Vegetables</h2>
+            <h2>Categories</h2>
           </div>
 
           <div className={classes.search_bar}>

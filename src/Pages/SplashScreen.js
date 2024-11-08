@@ -1,9 +1,6 @@
 import React from "react";
 import classes from "./SplashScreen.module.css";
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
-
-// const nav = useNavigate()
 
 const Splash_Screen = () => {
   return (

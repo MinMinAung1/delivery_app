@@ -40,7 +40,7 @@ export const Item = (props) => {
         <CiHeart />
         </button>
         <button className={classes.add_button} onClick={CartHandler}>
-          {cart ? <IoCheckmarkSharp /> : <CgShoppingCart />}
+          {cart ? <IoCheckmarkSharp className={classes.checked} /> : <CgShoppingCart />}
         </button>
       </div>
     </>
