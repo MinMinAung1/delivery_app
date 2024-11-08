@@ -6,8 +6,17 @@ import Categorie from "./Categorie";
 const CategorieList = (props) => {
   return (
     <>
-      <div className={classes.container}>
-        <div className={classes.item_list}>
+      <div>
+        <div className={classes.container}>
+          <div className={classes.navbar}>
+            <span className={classes.arrow}>←</span>
+            <h2>Vegetables</h2>
+          </div>
+
+          <div className={classes.search_bar}>
+            <input type="text" placeholder="Search"></input>
+          </div>
+          <div className={classes.product_list}>
           {props.items.map((item) => (
             <Categorie
               key={item.id}
@@ -17,6 +26,7 @@ const CategorieList = (props) => {
               quantity={item.quantity}
             />
           ))}
+          </div>
         </div>
       </div>
     </>

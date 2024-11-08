@@ -1,10 +1,84 @@
-.container{
-    margin: 0 auto 50px auto;
-    width: 90%;
+
+.container {
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.item_list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 20px;
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.navbar .arrow {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #8e44ad;
+}
+
+.navbar h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.search_bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.search_bar input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+/* Category Tabs */
+
+.category_tabs {
+display: flex;
+gap: 5px;
+overflow-x: auto;
+margin-bottom: 15px;
+-ms-overflow-style: none; 
+scrollbar-width: none; 
+}
+
+.category_tabs::-webkit-scrollbar {
+display: none; 
+}
+
+.tab {
+    padding: 6px 12px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.tab.selected {
+    background-color: #8e44ad;
+    color: white;
+}
+
+/* Product List */
+.product_list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }

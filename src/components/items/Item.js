@@ -26,7 +26,7 @@ export const Item = (props) => {
 
   return (
     <>
-      <div className={classes.product_item}>
+       <div className={classes.product_item}>
         <img
           src={props.image}
           className={classes.product_image}
