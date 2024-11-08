@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SplashScreen />} />
         <Route path="/items" element={<Items />} />
-        <Route path="/" element={<Payment />} />
+        <Route path="/cart" element={<Payment />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/vegetable" element={<Vegetables />} />
         <Route path="/checkout" element={<CheckoutScrollView />} />

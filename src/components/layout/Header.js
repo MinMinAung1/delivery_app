@@ -21,7 +21,7 @@ const Header = () => {
                     <span className={classes.badge}>{cartContext.totalCart}</span> 
                 </li>
                 <li>
-                    <Link to='/profile'><FiUser /></Link>
+                    <Link to='/payment'><FiUser /></Link>
                 </li>
             </ul>
     </footer>

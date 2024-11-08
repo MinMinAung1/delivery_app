@@ -12,9 +12,6 @@ const Payment = () => {
             <div>💳 **** **** **** 4747</div>
           </div>
 
-            
-            
-
           <div  className={classes.delivery_options}>
             <div className={classes.section_title}>Delivery options</div>
             <div class="option" className={classes.option}>
